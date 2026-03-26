@@ -46,98 +46,153 @@ export default function JobFairPage() {
       </section>
 
       {/* LEARN SECTION */}
-      <section className="px-[80px] py-[60px]">
-        <div className="mx-auto max-w-[1280px]">
+            <section className="px-[80px] py-[70px]">
+  <div className="mx-auto max-w-[1280px]">
 
-          <h2 className="text-[48px] text-black font-semibold mb-[32px]">
-            Learn all about it.
-          </h2>
+    {/* Title */}
+    <h2 className="text-[48px] font-bold text-black">
+      Learn all about it.
+    </h2>
 
-          <div className="grid grid-cols-3 gap-[24px]">
+    {/* Cards */}
+    <div className="mt-[34px] grid grid-cols-3 gap-[24px]">
 
-            {/* LOCATION */}
-            <div className="bg-[#FFFFFF] rounded-[20px] p-[28px] ">
-              <h3 className="font-semibold mb-[12px]">Location</h3>
-              <p className="text-sm text-black/70">
-                Saida’s Municipality Hall
-              </p>
-              <p className="text-xs text-black/40 mt-[6px]">
-                34th drive next to McDonald's, Saida, Lebanon
-              </p>
-            </div>
+      {/* Card 1 */}
+      <div className="rounded-[22px] bg-[#FFFFFF] px-[28px] py-[40px]">
+        <Image
+          src="/image/maps-location-01.svg"
+          alt=""
+          width={72}
+          height={72}
+        />
 
-            {/* DATE */}
-            <div className="bg-[#FFFFFF] rounded-[20px] p-[28px]">
-              <h3 className="font-semibold mb-[12px]">Date & Time</h3>
-              <p className="text-sm text-black/70">
-                12 Aug - 18 Aug, 8:00 - 19:30
-              </p>
-              <p className="text-xs text-black/40 mt-[6px]">
-                Doors open at 8:00 AM
-              </p>
-            </div>
+        <h3 className="mt-[40px] text-[26px] font-semibold text-black">
+          Location
+        </h3>
 
-            {/* ENTRY */}
-            <div className="bg-[#FFFFFF] rounded-[20px] p-[28px]">
-              <h3 className="font-semibold mb-[12px]">Entry Access</h3>
-              <p className="text-sm text-black/70">
-                QR Code
-              </p>
-              <p className="text-xs text-black/40 mt-[6px]">
-                Grab your ticket at kiosks throughout the event
-              </p>
-            </div>
+        <p className="mt-[30px] text-[20px] text-black">
+          Saida’s Municipality Hall
+        </p>
 
-          </div>
-        </div>
-      </section>
+        <p className="mt-[12px] text-[13px] text-black/40 leading-[160%]">
+          34th drive next to McDonald’s, Saida, Lebanon 29389
+        </p>
+      </div>
+
+      {/* Card 2 */}
+      <div className="rounded-[22px] bg-[#FFFFFF] px-[28px] py-[40px]">
+        <Image
+          src="/image/calendar-02.svg"
+          alt=""
+          width={72}
+          height={72}
+        />
+
+        <h3 className="mt-[40px] text-[26px] font-semibold text-black">
+          Date & Time
+        </h3>
+
+        <p className="mt-[30px] text-[20px] text-black">
+          12 Aug – 18 Aug, 8:00 – 19:30
+        </p>
+
+        <p className="mt-[12px] text-[13px] text-black/40 leading-[160%]">
+          Doors open at 8:00 AM, you may show up earlier to help with organization.
+        </p>
+      </div>
+
+      {/* Card 3 */}
+      <div className="rounded-[22px] bg-[#FFFFFF] px-[28px] py-[40px]">
+        <Image
+          src="/image/calendar-02.svg"
+          alt=""
+          width={72}
+          height={72}
+        />
+
+        <h3 className="mt-[40px] text-[26px] font-semibold text-black">
+          Entry Access
+        </h3>
+
+        <p className="mt-[30px] text-[20px] text-black">
+          QR Code
+        </p>
+
+        <p className="mt-[12px] text-[13px] text-black/40 leading-[160%]">
+          Grab your ticket at any of our open kiosks throughout the event, any day or time!
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* WHO IS COMING */}
-      <section className="px-[80px] py-[60px]">
-        <div className="mx-auto max-w-[1280px] flex gap-[80px]">
+                   <section className="px-[80px] py-[60px]">
+  <div className="mx-auto max-w-[1280px]">
+    {/* Top row */}
+    <div className="flex items-start justify-between gap-[80px]">
+      <h2 className="text-[48px] font-bold text-black min-w-[300px]">
+        Who is coming?
+      </h2>
 
-          {/* LEFT */}
-          <div className="min-w-[300px]">
-            <h2 className="text-[36px] font-semibold">
-              Who is coming?
-            </h2>
-          </div>
+      <p className="max-w-[520px] text-[14px] leading-[180%] text-black/50">
+        We are excited to announce that 32 local businesses from Saida will
+        participate in the first-ever open job fair. This event aims to connect
+        job seekers with diverse employers, highlighting the vibrant local economy
+        and available career paths.
+      </p>
+    </div>
 
-          {/* RIGHT */}
-          <div className="flex-1">
+    {/* Company list below */}
+    <div className="mt-[40px] grid grid-cols-4 gap-x-[48px] gap-y-[28px]">
+      {[
+        { name: "EcoTech", desc: "A pioneering firm dedicated to sustainable technology." },
+        { name: "GreenWave", desc: "A company specializing in eco-friendly products." },
+        { name: "SolarSync", desc: "An enterprise providing advanced solar energy systems." },
+        { name: "WindForce", desc: "A startup creating wind turbine technology for homes." },
 
-            <p className="text-[14px] text-black/50 max-w-[480px] mb-[30px]">
-              We are excited to announce that 32 local businesses from Saida will
-              participate in the first-ever open job fair. This event aims to connect
-              job seekers with diverse employers, highlighting the vibrant local economy
-              and available career paths.
-            </p>
+        { name: "BioEnergy", desc: "A firm focused on biofuel production and innovation." },
+        { name: "EcoSphere", desc: "A company developing circular economy solutions." },
+        { name: "TerraPower", desc: "An organization working on geothermal energy projects." },
+        { name: "HydroGen", desc: "A startup specializing in hydrogen fuel technology." },
 
-            <div className="grid grid-cols-4 gap-[24px] text-sm">
+        { name: "CleanFuture", desc: "A firm aimed at reducing carbon footprints." },
+        { name: "Sustainify", desc: "A company dedicated to sustainable living products." },
+        { name: "RegenTech", desc: "An innovative company focused on regenerative energy." },
+        { name: "EcoMotive", desc: "A startup creating sustainable transportation solutions." },
 
-              {[
-                "EcoTech","GreenWave","SolarSync","WindForce",
-                "BioEnergy","EcoSphere","TerraPower","HydroGen",
-                "CleanFuture","Sustainify","RegenTech","EcoMotive",
-                "SolarCity","GreenGrid","EcoStream","NatureNest",
-                "EcoLution","AgriTech","SmartWaste","GreenPulse",
-                "EcoXplore","BioSphere","PureEnergy","SolarFlow",
-                "WindHarvest","EcoFusion"
-              ].map((company) => (
-                <div key={company}>
-                  <p className="font-semibold text-black">{company}</p>
-                  <p className="text-black/40 text-xs">
-                    Company description here
-                  </p>
-                </div>
-              ))}
+        { name: "SolarCity", desc: "A company providing comprehensive solar energy services." },
+        { name: "GreenGrid", desc: "An enterprise focused on energy-efficient grid systems." },
+        { name: "EcoStream", desc: "A firm specializing in water conservation technologies." },
+        { name: "NatureNest", desc: "A company providing eco-friendly housing solutions." },
 
-            </div>
+        { name: "EcoLution", desc: "A startup dedicated to innovative environmental solutions." },
+        { name: "AgriTech", desc: "A firm focused on sustainable agriculture practices." },
+        { name: "SmartWaste", desc: "An organization developing waste management innovations." },
+        { name: "GreenPulse", desc: "A startup focused on energy-efficient products." },
 
-          </div>
+        { name: "EcoXplore", desc: "A company specializing in sustainable travel solutions." },
+        { name: "BioSphere", desc: "An enterprise dedicated to ecological conservation." },
+        { name: "PureEnergy", desc: "A startup developing clean energy alternatives." },
+        { name: "SolarFlow", desc: "A company innovating in solar panel technology." },
 
+        { name: "WindHarvest", desc: "A firm specializing in harnessing wind energy." },
+        { name: "EcoFusion", desc: "A startup merging technology with sustainability." },
+      ].map((company) => (
+        <div key={company.name}>
+          <p className="font-semibold text-black border-b border-black/30 inline-block">
+            {company.name}
+          </p>
+          <p className="mt-[6px] text-[13px] leading-[160%] text-black/45 max-w-[220px]">
+            {company.desc}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <Footer />
     </main>

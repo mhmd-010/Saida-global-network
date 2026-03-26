@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex items-center gap-[12px]">
             {/* If you already have your SGN icon, use it here */}
             <Image
-              src="/image/SGN icon.svg"
+              src="/image/Footer Logo.svg"
               alt="SGN"
               width={38}
               height={38}

@@ -31,7 +31,8 @@ export default function Services() {
       description: "Invest in Saida’s greatest potential businesses & individuals.",
       buttonText: "Learn more",
       iconRight: "/image/tips.png",
-      comingSoon: true,
+      comingSoon: false,
+       link: "/sandoukAlEghtirab", 
     },
   ];
 
