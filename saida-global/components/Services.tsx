@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ServiceCard from "./ServiceCard";
 
+
 export default function Services() {
   const services = [
     {
@@ -37,7 +38,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="w-full px-[80px] py-[80px] bg-[#F8F9FC]">
+    <section id="services" className="w-full px-[80px] py-[80px] bg-[#F8F9FC]">
       <div className="mx-auto max-w-[1280px]">
         {/* Big rounded dark container */}
         <div className="relative rounded-[32px] overflow-hidden px-[60px] pt-[48px] pb-[60px]">

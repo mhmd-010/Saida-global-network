@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const news = [
   {
@@ -38,9 +39,11 @@ export default function News() {
               We are aware of the noise found in a lot of news sources out there, so we decided to give you a source that delivers unfiltered, unbiased, trustworthy news about your home city.
             </p>
 
-            <button className="border border-[#010205] rounded-full px-[26px] py-[14px] text-[14px] text-black font-bold">
-              Go to News
-            </button>
+            <Link href="/News">
+        <button className="border border-[#010205] text-black font-semibold px-[22px] py-[10px] rounded-full hover:bg-black hover:text-white transition flex items-center gap-[10px]">
+      Go to News →
+       </button>
+        </Link>
           </div>
 
         </div>
@@ -49,7 +52,7 @@ export default function News() {
         <div className="grid grid-cols-3 gap-[24px]">
 
           {news.map((item, index) => (
-           <div className="bg-[#FFFFFF] rounded-[24px] p-[28px] h-[250px] flex flex-col">
+           <div key={item.title} className="bg-[#FFFFFF] rounded-[24px] p-[28px] h-[250px] flex flex-col">
 
   {/* TOP */}
   <div className="flex justify-between items-center mb-[12px]">

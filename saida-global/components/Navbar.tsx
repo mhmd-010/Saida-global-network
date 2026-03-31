@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
+
 export default function Navbar() {
   const links = [
-    { label: "Services", href: "#" },
+    { label: "Services", href: "/?scrollTo=services" },
     { label: "About us", href: "#" },
     { label: "Saida News", href: "/News" },
     { label: "Resources", href: "#" },
@@ -55,9 +57,12 @@ export default function Navbar() {
 </div>
 
           {/* Register button */}
-          <button className="h-[44px] px-8 rounded-full bg-black text-white text-[14px] font-medium">
-            Register
-          </button>
+         <Link
+            href="/auth"
+             className="bg-black text-white px-[40px] py-[10px] rounded-full"
+            >
+           Register
+</Link>
         </div>
       </div>
     </nav>
